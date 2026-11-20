@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hara Hoàng Vy – Quản trị năng lượng từ dòng chảy HARA</title>
+<meta name="description" content="Hara Hoàng Vy – Trainer, Coach, Mentor. Founder BỤNG Healing. Đồng hành cùng bạn xây nội lực, dưỡng nữ khí.">
+<meta property="og:title" content="Hara Hoàng Vy – Quản trị năng lượng từ dòng chảy HARA">
+<meta property="og:description" content="Xây nội lực, dưỡng nữ khí qua hơi thở, thân thể, giọng nói và sự chú tâm.">
+<meta property="og:image" content="img/vy-hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* ======= NỘI DUNG DỄ SỬA: xem phần <script> cuối file (biến INFO) ======= */
+:root{
+  --bg:#FBF8EF; --mint:#E6F0E4; --mint-2:#D3E5D1;
+  --forest:#2F5E3D; --forest-deep:#1F3F2A;
+  --butter:#F7E9AE; --brown:#5A3523; --brown-soft:#8A6A55;
+  --line:rgba(47,94,61,.14);
+  --radius:22px;
+  --breath:8s;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Be Vietnam Pro",system-ui,sans-serif;
+  color:var(--brown); background:var(--bg);
+  line-height:1.65; font-size:16px; font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.page{max-width:480px;margin:0 auto;padding:0 24px 120px;position:relative;overflow:hidden}
+@media (min-width:700px){
+  body{background:linear-gradient(180deg,var(--bg),var(--mint))}
+  .page{background:var(--bg);box-shadow:0 0 0 1px var(--line);min-height:100vh}
+}
+.script{font-family:"Dancing Script",cursive;font-weight:700;color:var(--forest);letter-spacing:.2px}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brown-soft);font-weight:500}
+section{padding:56px 0 8px}
+
+/* ---------- HERO ---------- */
+.hero{padding-top:36px;text-align:center}
+.portrait{position:relative;width:270px;height:270px;margin:26px auto 44px}
+.halo{position:absolute;left:50%;top:50%;width:400px;height:400px;margin:-200px 0 0 -200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(211,229,209,.95) 0%,rgba(230,240,228,.6) 45%,rgba(251,248,239,0) 70%);
+  animation:breathe var(--breath) ease-in-out infinite;pointer-events:none}
+.ring{position:absolute;inset:-18px;border-radius:50%;
+  border:1px solid rgba(47,94,61,.28);animation:breathe var(--breath) ease-in-out infinite;pointer-events:none}
+.pill{position:absolute;inset:0;border-radius:50%;overflow:hidden;background:var(--mint);
+  box-shadow:0 30px 60px -30px rgba(31,63,42,.45)}
+.pill img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+@keyframes breathe{0%,100%{transform:scale(.94);opacity:.7}50%{transform:scale(1.05);opacity:1}}
+h1.script{font-size:50px;line-height:1.05;margin:12px 0 6px}
+.tagline{margin-top:14px;font-weight:600;color:#B5382C;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase}
+.intro{margin:16px auto 0;max-width:360px;font-size:16.5px;font-weight:300}
+.intro b{font-weight:600;color:var(--forest)}
+.actions{display:flex;gap:10px;justify-content:center;margin:26px 0 8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:500;font-size:15px;
+  transition:transform .4s ease,background .4s ease;cursor:pointer;border:0;font-family:inherit}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--forest);color:#FBF8EF}
+.btn-primary:hover{background:var(--forest-deep)}
+.btn-ghost{background:transparent;color:var(--forest);box-shadow:inset 0 0 0 1.5px var(--forest)}
+.btn svg{width:18px;height:18px}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:38px 0 0;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat b{display:block;font-size:28px;font-weight:600;color:var(--forest);line-height:1.1}
+.stat span{font-size:12.5px;color:var(--brown-soft)}
+
+.story{text-align:left;margin-top:34px}
+.story p{font-size:16px;font-weight:300}
+.story p+p{margin-top:12px}
+.story em{font-style:italic;font-weight:400;color:var(--forest)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-size:12.5px;padding:6px 12px;border-radius:999px;background:var(--mint);color:var(--forest-deep);font-weight:500}
+.chip.butter{background:var(--butter)}
+
+/* ---------- 4 CÔNG CỤ ---------- */
+.head{text-align:center;margin-bottom:28px}
+.head h2{text-wrap:balance;font-size:24px;font-weight:600;color:var(--forest-deep);line-height:1.3;margin-top:8px}
+.head p{font-weight:300;margin-top:8px;font-size:15.5px}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:0 0 34px;text-align:center}
+.tool{padding:16px 4px 12px;border-radius:18px;background:#fff;box-shadow:0 1px 0 var(--line)}
+.mk{display:grid;place-items:center;width:34px;height:34px;margin:0 auto 8px;border-radius:4px;box-shadow:0 2px 6px -2px rgba(0,0,0,.25)}
+.mk svg{width:22px;height:22px}
+.tool b{display:block;font-size:17px;color:var(--forest);font-weight:600}
+.tool span{font-size:10.5px;color:var(--brown-soft);line-height:1.3;display:block;margin-top:2px}
+
+/* ---------- DỊCH VỤ ---------- */
+.services{display:flex;flex-direction:column;gap:18px}
+.card{border-radius:var(--radius);background:#fff;overflow:hidden;box-shadow:0 1px 0 var(--line),0 18px 40px -28px rgba(31,63,42,.35)}
+.card .photo{aspect-ratio:16/10;overflow:hidden;background:var(--mint)}
+.card .photo img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:20px 18px 22px}
+.card h3{text-wrap:balance;font-size:21px;line-height:1.3;font-weight:600;color:var(--forest-deep);margin:6px 0 8px}
+.card p{font-weight:300;font-size:15.5px}
+.card .chips{margin-top:16px;display:flex;flex-wrap:nowrap;gap:4px}
+.card .chip{flex:1 1 auto;text-align:center;white-space:nowrap;font-size:12.5px;padding:7px 7px}
+@media (max-width:389px){.card .body{padding-left:14px;padding-right:14px}.card .chip{font-size:11.5px;padding:7px 6px}}
+@media (max-width:350px){.card .chip{font-size:10.5px;padding:6px 5px}}
+.voices{margin:20px -18px 0;padding-top:16px;border-top:1px solid var(--line)}
+.voices-label{padding:0 18px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brown-soft);font-weight:500;display:flex;justify-content:space-between}
+.voices-label{align-items:center}
+.voices-nav{display:flex;gap:6px}
+.voices-nav button{display:grid;place-items:center;padding:0;width:32px;height:32px;border-radius:50%;border:0;background:var(--mint);color:var(--forest);font:500 15px "Be Vietnam Pro",sans-serif;cursor:pointer;transition:background .3s}
+.voices-nav button:hover{background:var(--mint-2)}
+.voices-row{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 28px,#000 calc(100% - 28px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 28px,#000 calc(100% - 28px),transparent 100%);padding:10px 0 4px;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.voices-track{display:flex;gap:10px;padding:0 18px;will-change:transform}
+.voice{flex:0 0 86%;max-width:300px;background:var(--bg);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;justify-content:space-between}
+.voice blockquote{font-size:14.5px;font-style:italic;font-weight:300;line-height:1.6}
+.voice blockquote::before{content:"“"}.voice blockquote::after{content:"”"}
+.voice figcaption{margin-top:10px;font-size:13px;font-weight:500;color:var(--forest)}
+.voice figcaption::before{content:"— "}
+.more{display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-weight:500;color:var(--forest);font-size:15px}
+.more i{font-style:normal;transition:transform .5s ease}
+.more:hover i{transform:translateX(4px)}
+
+/* ---------- LIÊN HỆ ---------- */
+.contact{text-align:center}
+.links{display:flex;flex-direction:column;gap:10px;text-align:left}
+.link{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:18px;background:#fff;box-shadow:0 1px 0 var(--line);transition:background .4s}
+.link:hover{background:var(--mint)}
+.link .ic{width:38px;height:38px;border-radius:50%;background:var(--mint);display:grid;place-items:center;flex:none;color:var(--forest)}
+.link .ic svg{width:18px;height:18px}
+.link small{display:block;font-size:12px;color:var(--brown-soft)}
+.link span{font-weight:500;color:var(--forest-deep);font-size:15px;word-break:break-word}
+footer{text-align:center;font-size:12px;color:var(--brown-soft);margin-top:44px}
+
+/* ---------- THANH LIÊN HỆ CỐ ĐỊNH ---------- */
+.dock{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);width:calc(100% - 28px);max-width:440px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;border-radius:999px;
+  background:rgba(251,248,239,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  box-shadow:0 0 0 1px var(--line),0 14px 30px -18px rgba(31,63,42,.45);z-index:10}
+.dock a,.dock button{display:flex;align-items:center;justify-content:center;gap:6px;padding:11px 6px;border-radius:999px;
+  font:500 14px "Be Vietnam Pro",sans-serif;color:var(--forest);background:transparent;border:0;cursor:pointer}
+.dock .z{background:var(--forest);color:#FBF8EF}
+.dock svg{width:16px;height:16px}
+
+/* ---------- HIỆN DẦN ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity 1.4s ease,transform 1.4s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .halo,.ring{animation:none}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <!-- 1. VY LÀ AI -->
+  <section class="hero" id="vy">
+    <div class="portrait">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="ring" aria-hidden="true"></div>
+      <div class="pill"><img src="img/vy-hero.jpg" alt="Chân dung Hara Hoàng Vy"></div>
+    </div>
+
+    <p class="eyebrow">Trainer · Coach · Mentor</p>
+    <h1 class="script">Hara Hoàng Vy</h1>
+    <p class="tagline">Quản trị năng lượng từ dòng chảy HARA</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" data-zalo href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H9l-5 4z" stroke-linejoin="round"/></svg>
+        Nhắn Zalo cho Vy</a>
+      <a class="btn btn-ghost" data-fb href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" stroke-linejoin="round"/></svg>
+        Kết nối với Vy</a>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b>8+</b><span>năm đào tạo</span></div>
+      <div class="stat"><b>16+</b><span>năm rèn thân</span></div>
+      <div class="stat"><b>2.700+</b><span>học viên</span></div>
+    </div>
+
+    <div class="story reveal">
+      <p>Vy là mẹ của 4 bạn nhỏ, và đã có hơn 16 năm rèn thân qua hơi thở, yoga và sự chú tâm.</p>
+      <p>Từ hành trình ấy, Vy lập <b>BỤNG Healing</b> để đồng hành cùng bạn <em>xây nội lực, dưỡng nữ khí</em> qua hơi thở, thân thể, giọng nói và sự chú tâm, để bạn giữ được nhịp năng lượng cho chính mình và sống nhẹ hơn mỗi ngày.</p>
+      <div class="chips">
+        <span class="chip butter">Founder BỤNG Healing</span>
+        <span class="chip">Tác giả sách “Trở Thành Chuyên Gia”</span>
+        <span class="chip">KRI Kundalini Yoga Global Teacher</span>
+        <span class="chip">Mindfulness Practitioner</span>
+        <span class="chip">Zen Leader Practitioner · FEBI Certified</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. DỊCH VỤ -->
+  <section id="dich-vu">
+    <div class="head reveal">
+      <p class="eyebrow">Dòng chảy HARA</p>
+      <h2>Bốn công cụ, một nhịp sống</h2>
+    </div>
+    <div class="tools reveal">
+      <div class="tool"><i class="mk" style="background:#E8222B"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="square"/></svg></i><b>Thở</b><span>Breathwork</span></div>
+      <div class="tool"><i class="mk" style="background:#fff;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)"><svg viewBox="0 0 24 24"><path d="M5 14c1.5-1 2 1 3 2 2-3 6-6 11-8" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round"/></svg></i><b>Thân</b><span>Body Learning</span></div>
+      <div class="tool"><i class="mk" style="background:#F7C80F"><svg viewBox="0 0 24 24"><path d="M12 12c-2-3-4-4-6-4a4 4 0 0 0 0 8c2 0 4-1 6-4s4-4 6-4a4 4 0 0 1 0 8c-2 0-4-1-6-4z" fill="none" stroke="#111" stroke-width="2.6"/></svg></i><b>Khẩu</b><span>Hara Voice</span></div>
+      <div class="tool"><i class="mk" style="background:#5BB4E5"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" fill="none" stroke="#111" stroke-width="3"/></svg></i><b>Ý</b><span>Mindfulness</span></div>
+    </div>
+
+    <div class="services">
+      <article class="card reveal">
+        <div class="photo"><img src="img/dv-khoi-thong.jpg" alt="Vy hướng dẫn chạm dẫn lưu hệ bạch huyết"></div>
+        <div class="body">
+          <h3>Lớp Khơi Thông Dòng Chảy Nữ Khí</h3>
+          <p>Dẫn lưu hệ bạch huyết bằng Mindful Touch. Đầu nhẹ, mắt sáng, vai cổ gáy thoáng.</p>
+          <div class="chips"><span class="chip butter">5h sáng</span><span class="chip">Thứ 2 – 7</span><span class="chip">Online qua Zoom</span></div>
+          <a class="more" data-link="khoiThong" href="#">Tìm hiểu thêm <i>→</i></a>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="photo"><img src="img/dv-noi-luc.jpg" alt="Vy tập thở giữa rừng xanh"></div>
+        <div class="body">
+          <h3>Lớp Xây Nội Lực – Dưỡng Nữ Khí</h3>
+          <p>Lớp tập online giữ nhịp. Dễ thở, ngủ ngon, giọng vững và nụ cười rạng rỡ.</p>
+          <div class="chips"><span class="chip butter">55 phút/buổi</span><span class="chip">Tự chọn giờ</span><span class="chip">Không giới hạn</span></div>
+          <a class="more" data-link="noiLuc" href="#">Tìm hiểu thêm <i>→</i></a>
+          <div class="voices" aria-label="Cảm nhận học viên"><div class="voices-label"><span>Học viên chia sẻ</span><span class="voices-nav"><button type="button" data-prev aria-label="Cảm nhận trước"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Cảm nhận tiếp"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></span></div><div class="voices-row"><figure class="voice"><blockquote>Sau gần 2 tháng, thân khoẻ khoắn, dẻo dai và tràn đầy năng lượng hơn. Tâm bình an, tĩnh lặng hơn mỗi ngày.</blockquote><figcaption>Như Mai</figcaption></figure><figure class="voice"><blockquote>Vùng hông mềm lên từng ngày, giọng nói có nội lực hơn, và kết nối với thân mình rất sâu.</blockquote><figcaption>Julia Trang Thanh</figcaption></figure><figure class="voice"><blockquote>Điều còn đọng lại không chỉ là cơ thể được vận động, mà là một sự bình yên rất nhẹ ở bên trong.</blockquote><figcaption>Nguyễn Thương</figcaption></figure><figure class="voice"><blockquote>Gần 3 tháng tập thở cùng cô Vy, mình khoẻ đi rất nhiều, không còn hụt hơi, cổ vai gáy hết đau nhức.</blockquote><figcaption>Hải My</figcaption></figure></div></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="photo"><img src="img/dv-hlv.jpg" alt="Học viên khoá huấn luyện viên BỤNG Healing"></div>
+        <div class="body">
+          <h3>Khoá 220h HLV Breathwork &amp; Hara Voice</h3>
+          <p>Trở thành huấn luyện viên Thở – Thân – Khẩu – Ý, có nhân hiệu riêng và đa nguồn thu nhập.</p>
+          <div class="chips"><span class="chip butter">Khai giảng 22/02/2027</span><span class="chip">220h truyền nghề</span></div>
+          <a class="more" data-link="hlv" href="#">Tìm hiểu thêm <i>→</i></a>
+          <div class="voices" aria-label="Cảm nhận học viên"><div class="voices-label"><span>Học viên chia sẻ</span><span class="voices-nav"><button type="button" data-prev aria-label="Cảm nhận trước"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Cảm nhận tiếp"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></span></div><div class="voices-row"><figure class="voice"><blockquote>Giá trị lớn nhất không chỉ là tấm chứng nhận HLV sau 220 giờ, mà là mình ý thức hơn về cách mình suy nghĩ, nói năng và hành động mỗi ngày. Biết ơn cô vì đã gieo những hạt giống tốt đẹp.</blockquote><figcaption>Thuong Nguyen</figcaption></figure><figure class="voice"><blockquote>Em đã có những giây phút lắng nghe chính mình qua hơi thở. Thân mình như cái cây, được tưới tắm mỗi ngày bằng Thở – Thân – Khẩu – Ý. Biết ơn vũ trụ đã kết nối em với cô.</blockquote><figcaption>Lê Thùy Linh</figcaption></figure><figure class="voice"><blockquote>Bụng vững chãi, tim cộng hưởng, giọng chuyển hoá là những điều mình được khám phá trong khoá 220H cùng chị Hara Hoàng Vy.</blockquote><figcaption>Tâm Tít</figcaption></figure><figure class="voice"><blockquote>Thật là vi diệu khi thân khoẻ hơn, hơi thở sâu hơn thì tâm trí cũng minh mẫn và tập trung hơn. Biết ơn chị Vy đã đem đến khoá học rất ý nghĩa, một món quà cuộc sống.</blockquote><figcaption>Kim Liên Uttara</figcaption></figure></div></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. LIÊN HỆ -->
+  <section class="contact" id="lien-he">
+    <div class="head reveal">
+      <h2>Thông tin liên hệ</h2>
+    </div>
+    <div class="links reveal" id="links"></div>
+    <footer>© 2026 Hara Hoàng Vy</footer>
+  </section>
+</main>
+
+<nav class="dock" aria-label="Liên hệ nhanh">
+  <a class="z" data-zalo href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H9l-5 4z" stroke-linejoin="round"/></svg>Zalo</a>
+  <a data-tel href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z" stroke-linejoin="round"/></svg>Gọi</a>
+  <a data-fb href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" stroke-linejoin="round"/></svg>Kết nối</a>
+</nav>
+
+
+<script>
+/* ===================== THÔNG TIN DỄ SỬA ===================== */
+const INFO = {
+  name: "Hara Hoàng Vy",
+  title: "Founder BỤNG Healing",
+  phone: "0768764491",
+  phoneShow: "0768 764 491",
+  email: "bunghealing@gmail.com",
+  facebook: "https://www.facebook.com/harahoangvy",
+  page: "https://www.facebook.com/BUNGHealing",
+  youtube: "https://www.youtube.com/@HaraHoangVy",
+  // Link landing page từng dịch vụ. Để trống "" thì nút sẽ mở Zalo.
+  links: { khoiThong: "", noiLuc: "", hlv: "" }
+};
+/* ============================================================ */
+
+const zalo = "https://zalo.me/" + INFO.phone;
+document.querySelectorAll("[data-zalo]").forEach(a => { a.href = zalo; a.target = "_blank"; a.rel = "noopener"; });
+document.querySelectorAll("[data-fb]").forEach(a => { a.href = INFO.facebook; a.target = "_blank"; a.rel = "noopener"; });
+document.querySelectorAll("[data-tel]").forEach(a => a.href = "tel:" + INFO.phone);
+document.querySelectorAll("[data-link]").forEach(a => {
+  const url = INFO.links[a.dataset.link] || zalo;
+  a.href = url; a.target = "_blank"; a.rel = "noopener";
+});
+
+const ic = {
+  zalo:'<path d="M4 5h16v11H9l-5 4z" stroke-linejoin="round"/>',
+  tel:'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z" stroke-linejoin="round"/>',
+  mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+  fb:'<path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" stroke-linejoin="round"/>',
+  yt:'<rect x="3" y="6" width="18" height="12" rx="3"/><path d="m10 9 5 3-5 3z" stroke-linejoin="round"/>'
+};
+const rows = [
+  ["zalo","Zalo", INFO.phoneShow, zalo],
+  ["tel","Điện thoại", INFO.phoneShow, "tel:"+INFO.phone],
+  ["mail","Email", INFO.email, "mailto:"+INFO.email],
+  ["fb","Facebook", "Hara Hoàng Vy", INFO.facebook],
+  ["fb","Fanpage", "BỤNG Healing", INFO.page],
+  ["yt","YouTube", "@HaraHoangVy", INFO.youtube]
+];
+document.getElementById("links").innerHTML = rows.map(([k,l,v,h]) =>
+  `<a class="link" href="${h}" ${h.startsWith("http")?'target="_blank" rel="noopener"':''}>
+     <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${ic[k]}</svg></span>
+     <div><small>${l}</small><span>${v}</span></div></a>`).join("");
+
+/* Cảm nhận học viên: trôi mượt liên tục, dừng khi chạm/rê chuột, kéo tay hoặc bấm nút để chuyển */
+const reduceMotion = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.querySelectorAll(".voices").forEach(box => {
+  const row = box.querySelector(".voices-row");
+  const items = [...row.children], n = items.length;
+  const track = document.createElement("div"); track.className = "voices-track";
+  items.forEach(el => track.appendChild(el));
+  items.forEach(el => { const c = el.cloneNode(true); c.setAttribute("aria-hidden","true"); track.appendChild(c); });
+  row.appendChild(track);
+  const step = () => track.children[1].offsetLeft - track.children[0].offsetLeft;
+  const loopW = () => n * step();
+  const SPEED = 16;                                   // px mỗi giây
+  let x = 0, hold = false, pausedUntil = 0, visible = true, last = 0, tween = null, drag = null;
+  const norm = v => { const L = loopW(); return ((v % L) + L) % L; };
+  const paint = () => { track.style.transform = `translate3d(${-x}px,0,0)`; };
+  const pauseFor = ms => { pausedUntil = Math.max(pausedUntil, performance.now() + ms); };
+
+  row.addEventListener("mouseenter", () => { hold = true; });
+  row.addEventListener("mouseleave", () => { hold = false; pauseFor(600); });
+  row.addEventListener("pointerdown", e => {
+    hold = true; tween = null; drag = { sx: e.clientX, sy: e.clientY, x0: x, moved: false };
+  });
+  window.addEventListener("pointermove", e => {
+    if (!drag) return;
+    const dx = e.clientX - drag.sx;
+    if (!drag.moved && Math.abs(dx) < 6) return;
+    drag.moved = true; x = norm(drag.x0 - dx); paint();
+  });
+  const end = e => { if (!drag) return; drag = null; if (e.pointerType !== "mouse") hold = false; pauseFor(2500); };
+  window.addEventListener("pointerup", end); window.addEventListener("pointercancel", end);
+
+  const ease = t => -(Math.cos(Math.PI * t) - 1) / 2;
+  const jump = (dir, d = 900, pause = 4500) => {
+    const st = step(), from = x;
+    const to = dir > 0 ? (Math.floor(x / st + .01) + 1) * st : (Math.ceil(x / st - .01) - 1) * st;
+    tween = { from, to, t0: performance.now(), d };
+    if (pause) pauseFor(pause);
+  };
+  box.querySelector("[data-prev]").addEventListener("click", () => jump(-1));
+  box.querySelector("[data-next]").addEventListener("click", () => jump(1));
+
+  if ("IntersectionObserver" in window)
+    new IntersectionObserver(es => { visible = es[0].isIntersecting; }, { threshold: .2 }).observe(row);
+
+  const tick = t => {
+    const dt = last ? Math.min((t - last) / 1000, .05) : 0; last = t;
+    if (tween) {
+      const k = Math.min((t - tween.t0) / tween.d, 1);
+      x = norm(tween.from + (tween.to - tween.from) * ease(k)); paint();
+      if (k >= 1) tween = null;
+    } else if (!reduceMotion && visible && !hold && !drag && t >= pausedUntil && !document.hidden) {
+      x = norm(x + SPEED * dt); paint();
+    }
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+});
+
+/* Hiện dần khi cuộn */
+const els = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window){
+  const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }), {threshold:.15});
+  els.forEach(el => io.observe(el));
+} else els.forEach(el => el.classList.add("in"));
+</script>
+</body>
+</html>
