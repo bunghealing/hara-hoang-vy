@@ -56,7 +56,8 @@ h1.script{font-size:50px;line-height:1.05;margin:12px 0 6px}
 .tagline{margin-top:14px;font-weight:600;color:#B5382C;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase}
 .intro{margin:16px auto 0;max-width:360px;font-size:16.5px;font-weight:300}
 .intro b{font-weight:600;color:var(--forest)}
-.actions{display:flex;gap:10px;justify-content:center;margin:26px 0 8px;flex-wrap:wrap}
+.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:26px 0 8px}
+.actions .btn{justify-content:center;white-space:nowrap;overflow:hidden;padding:13px 8px;font-size:clamp(13px,3.9vw,15px);gap:7px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:500;font-size:15px;
   transition:transform .4s ease,background .4s ease;cursor:pointer;border:0;font-family:inherit}
 .btn:active{transform:scale(.97)}
@@ -165,7 +166,7 @@ footer{text-align:center;font-size:12px;color:var(--brown-soft);margin-top:44px}
     <div class="actions">
       <a class="btn btn-primary" data-zalo href="#">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H9l-5 4z" stroke-linejoin="round"/></svg>
-        Nhắn Zalo cho Vy</a>
+        Nhắn Zalo</a>
       <a class="btn btn-ghost" data-fb href="#">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" stroke-linejoin="round"/></svg>
         Kết nối với Vy</a>
